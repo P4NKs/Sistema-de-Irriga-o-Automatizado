@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Irrigação Automatizado</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: #f4f7f5;
+            color: #333;
+        }
+
+        header {
+            height: 100vh;
+            background:
+                linear-gradient(rgba(0, 0, 0, .55),
+                    rgba(0, 0, 0, .55)),
+                url("https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1800&q=80");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .container img {
+            flex: 1;
+            min-width: 320px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,.15);
+        }
+
+        .texto {
+            flex: 1;
+            min-width: 320px;
+        }
+
+        .texto h2 {
+            color: #1b5e20;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .texto p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .escuro {
+            background: #ffffff;
+        }
+
+        .verde {
+            background: #e8f5e9;
+        }
+
+        footer {
+            background: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        @media(max-width:768px){
+            header h1{
+                font-size:2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>Sistema de Irrigação Automatizado</h1>
+        <p>
+            Uma solução inteligente desenvolvida para manter plantas e jardins
+            sempre saudáveis através da automação do processo de irrigação.
+        </p>
+    </div>
+</header>
+
+<section class="escuro">
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1200&q=80">
+
+        <div class="texto">
+            <h2>O Problema</h2>
+            <p>
+                Muitas pessoas possuem plantas em suas residências, porém a falta
+                de tempo e o esquecimento acabam comprometendo a frequência da
+                irrigação. Como consequência, as plantas podem perder nutrientes,
+                enfraquecer e até morrer por falta de água.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="verde">
+    <div class="container">
+
+        <div class="texto">
+            <h2>Público-Alvo</h2>
+            <p>
+                O projeto foi pensado para moradores que possuem jardins,
+                hortas ou plantas ornamentais em casa e desejam mantê-las
+                saudáveis mesmo em uma rotina corrida.
+            </p>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=80">
+    </div>
+</section>
+
+<section class="escuro">
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=80">
+
+        <div class="texto">
+            <h2>A Solução</h2>
+            <p>
+                A proposta consiste em um sistema de irrigação automatizado que
+                monitora constantemente a umidade do solo. Quando níveis baixos
+                são detectados, a irrigação é acionada automaticamente,
+                garantindo a quantidade adequada de água para as plantas.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="verde">
+    <div class="container">
+
+        <div class="texto">
+            <h2>Proposta de Valor</h2>
+            <p>
+                O sistema proporciona praticidade, economia de água e maior
+                segurança para quem deseja manter plantas saudáveis sem a
+                necessidade de acompanhamento constante.
+            </p>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?auto=format&fit=crop&w=1200&q=80">
+    </div>
+</section>
+
+<section class="escuro">
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Arduino_Uno_-_R3.jpg">
+
+        <div class="texto">
+            <h2>Implementação</h2>
+            <p>
+                O projeto utiliza um Arduino integrado a sensores de umidade e
+                uma bomba d'água. O sistema realiza leituras periódicas do solo
+                e ativa a irrigação apenas quando necessário, tornando o processo
+                eficiente e automatizado.
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    Projeto Acadêmico • Sistema de Irrigação Automatizado
+</footer>
+
+</body>
+</html>
