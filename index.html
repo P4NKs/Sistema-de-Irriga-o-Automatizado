@@ -7,100 +7,125 @@
     <title>Sistema de Irrigação Automatizado</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Segoe UI", sans-serif;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+    }
 
-        body {
-            background: #f4f7f5;
-            color: #333;
-        }
+    body {
+        background: #f4f7f5;
+        color: #333;
+    }
 
-        header {
-            height: 100vh;
-            background:
-                linear-gradient(rgba(0, 0, 0, .55),
-                    rgba(0, 0, 0, .55)),
-                url("https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1800&q=80");
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 20px;
-        }
+    header {
+        height: 100vh;
+        background:
+            linear-gradient(rgba(0, 0, 0, .55),
+                rgba(0, 0, 0, .55)),
+            url("https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1800&q=80");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 5.3rem;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    header p {
+        font-size: 1.6rem;
+        max-width: 850px;
+        margin: auto;
+        line-height: 1.7;
+    }
+
+    section {
+        padding: 90px 10%;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        flex-wrap: wrap;
+    }
+
+    .container img {
+        flex: 0.85;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0,0,0,.15);
+    }
+
+    .texto {
+        flex: 1;
+        min-width: 320px;
+    }
+
+    .texto h2 {
+        color: #1b5e20;
+        font-size: 2.9rem;
+        margin-bottom: 25px;
+        font-weight: 700;
+    }
+
+    .texto p {
+        font-size: 1.4rem;
+        line-height: 1.9;
+    }
+
+    .escuro {
+        background: #ffffff;
+    }
+
+    .verde {
+        background: #e8f5e9;
+    }
+
+    footer {
+        background: #1b5e20;
+        color: white;
+        text-align: center;
+        padding: 35px;
+        font-size: 1.15rem;
+    }
+
+    @media (max-width: 768px) {
 
         header h1 {
-            font-size: 4rem;
-            margin-bottom: 15px;
+            font-size: 3.4rem;
         }
 
         header p {
-            font-size: 1.3rem;
-            max-width: 700px;
-            margin: auto;
-        }
-
-        section {
-            padding: 80px 10%;
-        }
-
-        .container {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-            flex-wrap: wrap;
-        }
-
-        .container img {
-            flex: 1;
-            min-width: 320px;
-            width: 100%;
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0,0,0,.15);
-        }
-
-        .texto {
-            flex: 1;
-            min-width: 320px;
+            font-size: 1.25rem;
         }
 
         .texto h2 {
-            color: #1b5e20;
-            font-size: 2rem;
-            margin-bottom: 20px;
+            font-size: 2.2rem;
         }
 
         .texto p {
-            font-size: 1.1rem;
-            line-height: 1.8;
+            font-size: 1.2rem;
         }
 
-        .escuro {
-            background: #ffffff;
+        .container img {
+            max-width: 100%;
         }
-
-        .verde {
-            background: #e8f5e9;
-        }
-
-        footer {
-            background: #1b5e20;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
-
-        @media(max-width:768px){
-            header h1{
-                font-size:2.5rem;
-            }
-        }
+    }
+</style>
+</style>
     </style>
 </head>
 
@@ -187,29 +212,28 @@
         <div class="texto">
             <h2>Implementação</h2>
             <p>
-                O projeto utiliza um Arduino integrado a sensores de umidade e
-                uma bomba d'água. O sistema realiza leituras periódicas do solo
-                e ativa a irrigação apenas quando necessário, tornando o processo
-                eficiente e automatizado.
+                O projeto utiliza um Arduino integrado a sensores de umidade,
+                bomba d'água, relé e monitoramento eletrônico. O sistema realiza
+                leituras periódicas do solo e ativa a irrigação apenas quando
+                necessário, tornando o processo eficiente e automatizado.
             </p>
         </div>
     </div>
 </section>
 
-<!-- NOVA SEÇÃO RFID -->
-
 <section class="verde">
     <div class="container">
 
-        <img src="imagens/rfid1.jpg" alt="Sistema RFID de Irrigação">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80">
 
         <div class="texto">
             <h2>Controle de Acesso com RFID</h2>
             <p>
-                O sistema também utiliza a tecnologia RFID para identificação dos
+                O sistema utiliza a tecnologia RFID para identificação dos
                 usuários. Ao aproximar o cartão RFID do sensor, o Arduino realiza
-                a leitura das informações e envia os dados para o sistema,
-                permitindo uma autenticação rápida e segura.
+                a leitura das informações armazenadas no cartão e processa os
+                dados recebidos. Essa funcionalidade permite uma autenticação
+                rápida, segura e eficiente dos usuários do sistema.
             </p>
         </div>
 
@@ -220,17 +244,17 @@
     <div class="container">
 
         <div class="texto">
-            <h2>Identificação e Confirmação</h2>
+            <h2>Identificação e Confirmação de Acesso</h2>
             <p>
-                Após a leitura do cartão, o identificador único (ID) é enviado ao
-                site para validação. Quando o cartão é reconhecido, o sistema
-                exibe uma mensagem de confirmação no display LCD e na interface
-                web, garantindo que apenas usuários autorizados tenham acesso às
-                funcionalidades do projeto.
+                Ao aproximar o cartão RFID do sensor, o Arduino faz a leitura e
+                envia os dados para o site, que identifica o cartão e confirma o
+                acesso na tela. Além disso, uma mensagem é exibida no display LCD,
+                informando que o cartão foi reconhecido com sucesso e permitindo
+                que apenas usuários autorizados utilizem o sistema.
             </p>
         </div>
 
-        <img src="imagens/rfid2.jpg" alt="Cartão RFID Identificado">
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80">
 
     </div>
 </section>
