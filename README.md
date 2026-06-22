@@ -18,3 +18,5 @@ O site apresenta de forma visual e organizada o problema identificado, o públic
 Desenvolver uma solução tecnológica que facilite os cuidados com plantas e jardins, promovendo praticidade, automação e uso eficiente da água.
 
 -> Grupo: Julia Zonta, Alisson e João Otávio 
+
+https://sistema-de-irriga-o-automatizado.vercel.app/
