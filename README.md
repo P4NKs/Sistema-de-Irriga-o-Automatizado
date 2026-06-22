@@ -19,4 +19,4 @@ Desenvolver uma solução tecnológica que facilite os cuidados com plantas e ja
 
 -> Grupo: Julia Zonta, Alisson e João Otávio 
 
-https://sistema-de-irriga-o-automatizado.vercel.app/
+Projeto hosteado no link: https://sistema-de-irriga-o-automatizado.vercel.app/
